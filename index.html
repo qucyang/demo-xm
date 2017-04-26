@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>小米商城 - 小米5s、红米Note 4、小米MIX、小米笔记本官方网站</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./dist/css/style-mini.css">
+</head>
+<body>
+<header>
+    <!--导航栏-->
+    <div class="nav clearFix md">
+        <nav class="left">
+            <a href="#">小米商城</a>
+            <a href="#">MIUI</a>
+            <a href="#">米聊</a>
+            <a href="#">游戏</a>
+            <a href="#">多看阅读</a>
+            <a href="#">云服务</a>
+            <a href="#">金融</a>
+            <a href="#">小米网移动版</a>
+            <a href="#">问题反馈</a>
+            <a href="#">Select Region</a>
+        </nav>
+        <div class="user right">
+            <a href="">登录</a>
+            <a href="">注册</a>
+            <a href="#">消息通知</a>
+            <a href="#" class="shopCar">购物车(0)</a>
+            <div class="shpCar">
+                <p>购物车中还没有商品，赶紧选购吧！</p>
+            </div>
+        </div>
+    </div>
+    <!--商品展示-->
+    <div class="warp">
+        <div class="goods md clearFix">
+            <!--logo-->
+            <div>
+                <a href="#"><img src="./img/milogo.png" alt="log"></a>
+            </div>
+            <!--导航商品展示-->
+            <div>
+                <ul class="clearFix showShop">
+                    <li data-name="xmPhone"><a href="#">小米手机</a></li>
+                    <li data-name="hmPhone"><a href="#">红米</a></li>
+                    <li data-name="pad"><a href="#">平板 · 笔记本</a></li>
+                    <li data-name="TV"><a href="#">电视</a></li>
+                    <li data-name="video"><a href="#">盒子 · 影音</a></li>
+                    <li data-name="Router"><a href="#">路由器</a></li>
+                    <li data-name="IlHW"><a href="#">智能硬件</a></li>
+                    <li data-name="serve"><a href="#">服务</a></li>
+                    <li data-name="community"><a href="#">社区</a></li>
+                </ul>
+            </div>
+            <div>
+                <!--搜索商品-->
+                <form action="#">
+                    <input type="text" id="search">
+                    <input type="submit" value="">
+                    <div class="searchWords">
+                        <a href="#">小米MIX</a><a href="#">人工智能电视</a>
+                    </div>
+                    <!--搜索下拉框-->
+                    <div class="search">
+                        <ul>
+                            <li><a href="#"><span> 小米5s Plus</span><span>约有5件</span></a></li>
+                            <li><a href="#"><span> 小米Max</span><span>约有8件</span></a></li>
+                            <li><a href="#"><span> 小米手机5</span><span>约有10件</span></a></li>
+                            <li><a href="#"><span> 空气净化器2</span><span>约有3件</span></a></li>
+                            <li><a href="#"><span> 活塞耳机</span><span>约有3件</span></a></li>
+                            <li><a href="#"><span> 小米路由器</span><span>约有6件</span></a></li>
+                            <li><a href="#"><span> 移动电源</span><span>约有14件</span></a></li>
+                            <li><a href="#"><span> 运动相机</span><span>约有11件</span></a></li>
+                            <li><a href="#"><span> 小蚁摄像机</span><span>约有2件</span></a></li>
+                            <li><a href="#"><span> 小米体重秤</span><span>约有1件</span></a></li>
+                            <li><a href="#"><span> 小米插线板</span><span>约有10件</span></a></li>
+                            <li><a href="#"><span> 配件优惠套装</span><span>约有23件</span></a></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--展示商品盒子-->
+        <div class="content">
+            <div class="box md">
+                <ul class="clearFix"></ul>
+            </div>
+        </div>
+    </div>
+</header>
+<section>
+   <!--二级菜单商品展示-->
+    <div class="shopSelect md">
+        <div class="shopList">
+            <a href="#" data-name="phone">手机 电话卡<i>></i></a>
+            <a href="#" data-name="pad">笔记本 平板<i>></i></a>
+            <a href="#" data-name="TV">电视 盒子<i>></i></a>
+            <a href="#" data-name="Router">路由器 智能硬件<i>></i></a>
+            <a href="#" data-name="power">移动电源 电池 插线板<i>></i></a>
+            <a href="#" data-name="headset">耳机 音箱<i>></i></a>
+            <a href="#" data-name="protectiveJacket">保护套 贴膜<i>></i></a>
+            <a href="#" data-name="wireRod">线材 支架 存储卡<i>></i></a>
+            <a href="#" data-name="bag">箱包 服饰<i>></i></a>
+            <a href="#" data-name="rim">米兔 生活周边<i>></i></a>
+        </div>
+        <!--二级菜单商品展示盒子-->
+        <div class="shopCon hid clearFix">
+        </div>
+        <!--轮播-->
+        <div class="lunBo">
+            <ul>
+                <li class="active"><a href="#"><img src="./img/lunbo1.jpg" alt=""></a></li>
+                <li><a href="#"><img src="./img/lunbo2.jpg" alt=""></a></li>
+                <li><a href="#"><img src="./img/lunbo3.jpg" alt=""></a></li>
+                <li><a href="#"><img src="./img/lunbo4.jpg" alt=""></a></li>
+                <li><a href="#"><img src="./img/lunbo5.jpg" alt=""></a></li>
+            </ul>
+            <span>〈</span>
+            <span>〉</span>
+            <div class="point"></div>
+        </div>
+    </div>
+    <!--多样服务-->
+    <div class="otherFn md clearFix">
+        <div>
+            <ul class="clearFix">
+                <li><a href="#"><i></i><span>选购手机</span></a></li>
+                <li><a href="#"><i></i><span>企业团购</span></a></li>
+                <li><a href="#"><i></i><span>官翻产品</span></a></li>
+                <li><a href="#"><i></i><span>小米移动</span></a></li>
+                <li><a href="#"><i></i><span>以旧换新</span></a></li>
+                <li><a href="#"><i></i><span>话费充值</span></a></li>
+            </ul>
+        </div>
+        <div><a href="#"><img src="./img/adv1.jpg" alt=""></a></div>
+        <div><a href="#"><img src="./img/adv2.jpg" alt=""></a></div>
+        <div><a href="#"><img src="./img/adv3.jpg" alt=""></a></div>
+    </div>
+    <!--滚动展示商品-->
+    <div class="oneShow md">
+        <div class="one-piece clearFix">
+            <h2 class="titleH2">小米明星单品</h2>
+            <div class="right">
+                <span class="active"><</span>
+                <span>></span>
+            </div>
+        </div>
+        <!--商品内容-->
+        <div class="lunBoShow liColor md">
+            <ul class="clearFix">
+                <li>
+                    <p>
+                        <a href="#"><img src="./img/e991f1e2-20d8-40c3-bf1d-012b122c986b.png" alt=""></a>
+                    </p>
+                    <p>
+                        <a href="#">小米5s Plus</a>
+                    </p>
+                    <p>5.7英寸大屏双摄手机，拍照黑科技</p>
+                    <p>999元起<span></span></p>
+                    <p></p>
+                    <div></div>
+                </li>
+                <li>
+                    <p>
+                        <a href="#"><img src="./img/5e2eb710-a99f-4235-ac5c-1b20b1e6c3b6.png" alt=""></a>
+                    </p>
+                    <p>
+                        <a href="#">红米手机4</a>
+                    </p>
+                    <p>1月13日早10点开售</p>
+                    <p>699元起</p>
+                </li>
+                <li>
+                    <p>
+                        <a href="#"><img src="./img/963f82bb-017d-4b67-831c-f79a435d0e48.png" alt=""></a>
+                    </p>
+                    <p>
+                        <a href="#">小米电视3s 55英寸</a>
+                    </p>
+                    <p>人工智能电视，4K大屏新旗舰</p>
+                    <p>3699元起</p>
+                </li>
+                <li>
+                    <p>
+                        <a href="#"><img src="./img/6ef55907-bbed-49be-a2bb-be0821b5f7b8.png" alt=""></a>
+                    </p>
+                    <p>
+                        <a href="#">小米手环 2</a>
+                    </p>
+                    <p>OLED 显示屏幕，升级计步算法</p>
+                    <p>149元</p>
+                </li>
+                <li>
+                    <p>
+                        <a href="#"><img src="./img/17fc57e5-e332-4452-bba4-ef341f6e59fd.png" alt=""></a>
+                    </p>
+                    <p>
+                        <a href="#">小米移动电源2</a>
+                    </p>
+                    <p>双向快充，高密度锂聚合物电芯</p>
+                    <p>79元</p>
+                </li>
+                <li>
+                    <p>
+                        <a href="#"><img src="./img/f24c0788-e6c2-4139-8f53-c0d4524eda09.png" alt=""></a>
+                    </p>
+                    <p>
+                        <a href="#">红米Note4</a>
+                    </p>
+                    <p>十核旗舰处理器，一体化全金属机身</p>
+                    <p>999元起</p>
+                </li>
+                <li>
+                    <p>
+                        <a href="#"><img src="./img/T146YgBKhv1RXrhCrK.jpg" alt=""></a>
+                    </p>
+                    <p>
+                        <a href="#">小米盒子3 增强版</a>
+                    </p>
+                    <p>高端 4K 网络机顶盒</p>
+                    <p>399元</p>
+                </li>
+                <li>
+                    <p>
+                        <a href="#"><img src="./img/de35852a-1be5-4ef5-846f-dcdd2efcfea6.png" alt=""></a>
+                    </p>
+                    <p>
+                        <a href="#">小米路由器3</a>
+                    </p>
+                    <p>更快更强，不止四天线</p>
+                    <p>149元</p>
+                </li>
+                <li>
+                    <p>
+                        <a href="#"><img src="./img/4c68c352-fbd3-452d-be90-7b47e4f6ce76.png" alt=""></a>
+                    </p>
+                    <p>
+                        <a href="#">小米平板2 16GB现货</a>
+                    </p>
+                    <p>轻薄全金属，海量内容</p>
+                    <p>999元</p>
+                </li>
+                <li>
+                    <p>
+                        <a href="#"><img src="./img/d663ce13-c814-4f35-a7a8-46a4745e6fd7.jpg" alt=""></a>
+                    </p>
+                    <p>
+                        <a href="#">小米体重秤</a>
+                    </p>
+                    <p>100克，喝杯水都可感知的精准</p>
+                    <p>99元</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--多种商品展示区-->
+<section class="bg-gray">
+    <!--智能硬件商品区-->
+    <div class="intelligent md clearFix">
+       <div class="title clearFix">
+           <h2 class="left titleH2">智能硬件</h2>
+           <div class="right">
+               <a href="#">查看全部<span>></span></a>
+           </div>
+       </div>
+        <div class="left Le">
+            <a href="#"><img src="./img/9e070f35-3e16-482c-98b0-953e99ec634d.jpg" alt=""></a>
+        </div>
+        <!--商品内容-->
+        <div class="left Ri"></div>
+    </div>
+    <!--搭配商品区-->
+    <div class="intelligent md clearFix">
+        <div class="title clearFix">
+            <h2 class="left titleH2">搭配</h2>
+            <div class="right select">
+                <a href="#" class="active" data-name="hot">热门</a>
+                <a href="#" data-name="headset">耳机音箱</a>
+                <a href="#" data-name="power">电源</a>
+                <a href="#" data-name="storageCard">电池存储卡</a>
+            </div>
+        </div>
+        <div class="left Le">
+            <a href="#"><img src="./img/77bcf6d1-7b25-4419-bcde-9564e1e614a1.jpg" alt=""></a>
+            <a href="#"><img src="./img/21dc127c-77ad-48fb-b7c1-bf382a711221.jpg" alt=""></a>
+        </div>
+        <!--商品内容-->
+        <div class="left Ri"></div>
+    </div>
+    <!--配件商品区-->
+    <div class="intelligent md clearFix">
+        <div class="title clearFix">
+            <h2 class="left titleH2">配件</h2>
+            <div class="right select">
+                <a href="#" class="active" data-name="hot">热门</a>
+                <a href="#" data-name="protectiveJacket">保护套</a>
+                <a href="#" data-name="padPasting">贴膜</a>
+                <a href="#" data-name="otherAccessories">其他配件</a>
+            </div>
+        </div>
+        <div class="left Le">
+            <a href="#"><img src="./img/e88b7c02-51d7-408b-bcc2-f561422dd180.jpg" alt=""></a>
+            <a href="#"><img src="./img/1e61b34d-41a3-46ff-8097-a9cae9114df2.jpg" alt=""></a>
+        </div>
+        <!--商品内容-->
+        <div class="left Ri"></div>
+    </div>
+    <!--周边商品区-->
+    <div class="intelligent md clearFix">
+        <div class="title clearFix">
+            <h2 class="left titleH2">周边</h2>
+            <div class="right select">
+                <a href="#" class="active" data-name="hot">热门</a>
+                <a href="#" data-name="clothing">服装</a>
+                <a href="#" data-name="meToo">米兔</a>
+                <a href="#" data-name="rim">生活周边</a>
+                <a href="#" data-name="bag">箱包</a>
+            </div>
+        </div>
+        <div class="left Le">
+            <a href="#"><img src="./img/7bd5f425-d1ee-48ee-a16f-bb5d86d75c48.jpg" alt=""></a>
+            <a href="#"><img src="./img/89c07e26-de7a-43fb-b482-f8cc92124bbf.jpg" alt=""></a>
+        </div>
+        <!--商品内容-->
+        <div class="left Ri"></div>
+    </div>
+    <!--为你推荐滚动栏-->
+    <div class="oneShow md">
+        <div class="one-piece clearFix">
+            <h2 class="titleH2">为你推荐</h2>
+            <div class="right">
+                <span class="active"><</span>
+                <span>></span>
+            </div>
+        </div>
+        <!--商品内容-->
+        <div class="lunBoShow2 md">
+        </div>
+    </div>
+    <!--热评产品区-->
+    <div class="hotProduct md">
+        <h2 class="titleH2">热评产品</h2>
+        <div class="hotPContent">
+            <ul class="clearFix">
+                <li>
+                    <p><a href="#"><img src="./img/54e35fdd-bc68-4a89-bad7-c9c3bb2fc6fe.jpg" alt=""></a></p>
+                    <p><a href="">洁净渴能白净水，净水喝的放心，超高性价比，科技乐趣……</a></p>
+                    <p>来自于 linhai哥哥 的评价</p>
+                    <p>
+                        <a href="#">小米净水器</a>
+                        <span>1299元</span>
+                    </p>
+                </li>
+                <li>
+                    <p><a href="#"><img src="./img/dc2b9fb7-5399-48cc-99d9-edea9fbfb9aa.jpg" alt=""></a></p>
+                    <p><a href="">刚收到，外观很漂亮，颜色也很喜欢，等了好长时间了，终于拿到了，非常满意，棒棒哒！！！</a></p>
+                    <p> 来自于 龙炎 的评价 </p>
+                    <p>
+                        <a href="#">小米笔记本Air 12.5英寸</a>
+                        <span>3499元</span>
+                    </p>
+                </li>
+                <li>
+                    <p><a href="#"><img src="./img/62d44838-f464-4c11-887c-9168645ae797.jpg" alt=""></a></p>
+                    <p><a href="">我就是喜欢这样的路由器，我每天回到家都要连着WiFi上网，上班就没办法连着呢！每次都等待着下班，我好...</a></p>
+                    <p> 来自于 欧阳长 的评价 </p>
+                    <p>
+                        <a href="#">小米路由器3</a>
+                        <span>149元</span>
+                    </p>
+                </li>
+                <li>
+                    <p><a href="#"><img src="./img/12987438-4522-425f-a252-2493152edda1.jpg" alt=""></a></p>
+                    <p><a href="">东西很小，做工挺精致，电池待机也比想象中好。值得买。</a></p>
+                    <p> 来自于 同路者 的评价 </p>
+                    <p>
+                        <a href="#">小米随身蓝牙音箱</a>
+                        <span>69元</span>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--多个滚动栏-->
+    <div class="contentLunBo md">
+        <h2 class="titleH2">内容</h2>
+        <div class="clearFix">
+            <div class="contentLunBo1">
+                <div></div>
+                <p>图书</p>
+                <ul class="clearFix">
+                </ul>
+                <span class="active"><</span>
+                <span>></span>
+            </div>
+            <div class="contentLunBo1">
+                <div></div>
+                <p>MIUI 主题</p>
+                <ul class="clearFix">
+                </ul>
+                <span class="active"><</span>
+                <span>></span>
+            </div>
+            <div class="contentLunBo1">
+                <div></div>
+                <p>游戏</p>
+                <ul class="clearFix">
+                </ul>
+                <span class="active"><</span>
+                <span>></span>
+            </div>
+            <div class="contentLunBo1">
+                <div></div>
+                <p>应用</p>
+                <ul class="clearFix">
+                </ul>
+                <span class="active"><</span>
+                <span>></span>
+            </div>
+        </div>
+    </div>
+    <!--视频栏-->
+    <div class="Video md">
+        <div class="title clearFix">
+            <h2 class="left titleH2">视频</h2>
+            <div class="right">
+                <a href="#">查看全部<span>></span></a>
+            </div>
+        </div>
+        <div class="VideoDiv">
+            <ul class="clearFix">
+            </ul>
+        </div>
+    </div>
+    <!--半透明黑色遮罩-->
+    <div class="videoShow hid">
+        <!--视频盒子-->
+        <div class="videoShowWarp">
+            <!--视频名称-->
+            <div class="clearFix"><h2>[name]</h2><i class="closeBtn">×</i></div>
+            <div class="videoBox">
+                <!--视频-->
+                <div class="videos">
+                    <video class="videoPlay" preload="auto">
+                        <source src="./img/ef68a52e6a4e3d131994eeadb6f6ade9.jpg" type="video/mp4">
+                    </video>
+                </div>
+                <!--开始播放前图片-->
+                <div class="videoImg">
+                    <img src="./img/c1c4d2c2e37e49e2bc58ff66e7363043.jpg" alt="">
+                </div>
+                <div class="controlShow">
+                    <!--进度条-->
+                    <div class="bar"><span class="barBgColor"></span></div>
+                    <!--控件-->
+                    <div class="control clearFix">
+                        <div><i class="controlStart"></i></div>
+                        <div><span class="nowTime">00:00</span><span>/</span><span class="sumTime">00:00</span></div>
+                        <div><i class="controlChange"></i></div>
+                        <div><i class="controlSound"></i><span><span class="adjust"></span><span class="bgColor"></span></span></div>
+                    </div>
+                </div>
+                <!--透明开始按钮-->
+                <div class="startDiv"><i class="startBtn"></i></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--页脚-->
+<footer>
+    <div>
+        <div class="md">
+            <img src="./icon/footer.png" alt="">
+        </div>
+    </div>
+    <div>
+        <div class="md">
+            <img src="./icon/footer2.png" alt="">
+        </div>
+    </div>
+</footer>
+<script src="./dist/js/index-mini.js" type="text/javascript"></script>
+<script>
+    console.log(json);
+</script>
+</body>
+</html>

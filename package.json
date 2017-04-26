@@ -1,0 +1,20 @@
+{
+  "name": "xm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "xm": "npm i --save-dev gulp-concat browser-sync gulp-uglify run-sequence gulp-minify-css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-uglify": "^2.1.2",
+    "run-sequence": "^1.2.2"
+  }
+}
